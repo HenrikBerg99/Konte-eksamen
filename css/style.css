@@ -1,7 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-html, body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html {
   max-width: 1400px;
   font-family: Montserrat;
+}
+
+section.phone_header {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+section.phone_header img.logo {
+  width: 60px;
+}
+section.phone_header nav.phone_nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+section.phone_header nav.phone_nav ul li a {
+  color: #252525;
+  font-size: 22px;
+  transition: 0.1s all ease;
+}
+section.phone_header nav.phone_nav ul li a:hover {
+  transition: 0.1s all ease;
+  opacity: 0.7;
+}
+
+section.desktop_header {
+  display: none;
+}
+
+@media only screen and (min-width: 900px) {
+  section.phone_header {
+    display: none;
+  }
+  section.desktop_header {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */
