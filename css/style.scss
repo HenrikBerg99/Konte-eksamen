@@ -10,11 +10,15 @@ $main_font: Montserrat;
 $light_blue: #52d3f0;
 $blue: #1ca2c1;
 $yellow: #ffcf40;
-$text_black: #252525;
+$bg_black: #252525;
+$black: #000000;
 $smoke_white: #e8e8e8;
 $tinted_white: #f6f5f2;
 $white: #ffffff;
 $green: #019101;
+
+// Border redius
+$border_redius: 8px;
 
 
 // ------------------------------------
@@ -28,7 +32,6 @@ $green: #019101;
 }
 
 html {
-    max-width: 1400px;
     font-family: $main_font;
 }
 
@@ -58,8 +61,8 @@ section.phone_header {
         list-style: none;
 
         li a {
-            color: $text_black;
-            font-size: 22px;
+            color: $black;
+            font-size: 24px;
             transition: .1s all ease;
 
             &:hover {
@@ -75,8 +78,130 @@ section.desktop_header {
 }
 
 // ------------------------------------
-//  Colors
+//  Footer
 // ------------------------------------
+
+footer {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    background-color: $bg_black;
+    display: flex;
+    flex-wrap: wrap;
+
+    section.flags {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1 1 100%;
+        width: 100%;
+        justify-content: center;
+        gap: 1rem;
+       
+        article.flag {
+            display: flex;
+            align-items: center;
+            height: 40px;
+            gap: 1rem;
+
+            img {
+                width: 40px;
+                object-fit: scale-down;
+            }
+            
+            p {
+                color: $white;
+                font-weight: 500;
+            }
+        }
+    }
+
+    section.content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 2rem;
+        gap: 1rem;
+
+        article {
+            margin-bottom: 2rem;
+            
+            h3 {
+                text-transform: uppercase;
+                color: $white;
+                font-size: 16px;
+                margin-bottom: 1rem;
+            }
+
+            a {
+                color: $white;
+                font-weight: 500;
+                text-decoration: none;
+                transition: .1s all ease;
+
+                &:hover {
+                    opacity: .7;
+                    transition: .1s all ease;
+                }
+            }
+        }
+
+        article.payment, article.social_media {
+
+            ul {
+                list-style: none;
+                display: flex;
+                gap: 1rem;
+
+                li, li a {
+                    color: $white;
+                    font-size: 28px;
+                }
+            }
+        }
+
+        article.news {
+            
+            form {
+                padding: 1.5rem;
+                margin-bottom: 1rem;
+                position: relative;
+                border: 1px solid $white;
+
+                label {
+                    position: absolute;
+                    top: -10px;
+                    background-color: $bg_black;
+                    color: $white;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+
+                article.input_field {
+                    margin-bottom: 0;
+
+                    input {
+                        height: 35px;
+                        border-radius: $border_redius;
+                        border: none;
+                        padding: 0 5px;
+
+                        &[type=submit] {
+                            background-color: $yellow;
+                            font-weight: 800;
+                        }
+                    }
+                }
+            }
+        }
+        
+        article.service {
+            ul {
+                list-style: none;
+            }
+        }
+    }
+}
 
 // ------------------------------------
 //  Colors

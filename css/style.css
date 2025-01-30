@@ -6,7 +6,6 @@
 }
 
 html {
-  max-width: 1400px;
   font-family: Montserrat;
 }
 
@@ -27,8 +26,8 @@ section.phone_header nav.phone_nav ul {
   list-style: none;
 }
 section.phone_header nav.phone_nav ul li a {
-  color: #252525;
-  font-size: 22px;
+  color: #000000;
+  font-size: 24px;
   transition: 0.1s all ease;
 }
 section.phone_header nav.phone_nav ul li a:hover {
@@ -38,6 +37,104 @@ section.phone_header nav.phone_nav ul li a:hover {
 
 section.desktop_header {
   display: none;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+  background-color: #252525;
+  display: flex;
+  flex-wrap: wrap;
+}
+footer section.flags {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 100%;
+  width: 100%;
+  justify-content: center;
+  gap: 1rem;
+}
+footer section.flags article.flag {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  gap: 1rem;
+}
+footer section.flags article.flag img {
+  width: 40px;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+footer section.flags article.flag p {
+  color: #ffffff;
+  font-weight: 500;
+}
+footer section.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+footer section.content article {
+  margin-bottom: 2rem;
+}
+footer section.content article h3 {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+footer section.content article a {
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.1s all ease;
+}
+footer section.content article a:hover {
+  opacity: 0.7;
+  transition: 0.1s all ease;
+}
+footer section.content article.payment ul, footer section.content article.social_media ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+footer section.content article.payment ul li, footer section.content article.payment ul li a, footer section.content article.social_media ul li, footer section.content article.social_media ul li a {
+  color: #ffffff;
+  font-size: 28px;
+}
+footer section.content article.news form {
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  border: 1px solid #ffffff;
+}
+footer section.content article.news form label {
+  position: absolute;
+  top: -10px;
+  background-color: #252525;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+footer section.content article.news form article.input_field {
+  margin-bottom: 0;
+}
+footer section.content article.news form article.input_field input {
+  height: 35px;
+  border-radius: 8px;
+  border: none;
+  padding: 0 5px;
+}
+footer section.content article.news form article.input_field input[type=submit] {
+  background-color: #ffcf40;
+  font-weight: 800;
+}
+footer section.content article.service ul {
+  list-style: none;
 }
 
 @media only screen and (min-width: 900px) {
