@@ -133,10 +133,6 @@ section.order_scheme {
                 height: auto;
                 overflow-y: auto;
         
-                &::-webkit-scrollbar {
-                    display: none;
-                  }
-        
                 ul {
                     display: flex;
                     flex-direction: row;
@@ -210,6 +206,12 @@ section.order_scheme {
         
     }
 }
+
+// ------------------------------------
+//  Index - Campaign
+// ------------------------------------
+
+
 
 // ------------------------------------
 //  Footer

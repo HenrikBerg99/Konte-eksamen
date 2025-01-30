@@ -89,9 +89,6 @@ section.order_scheme section.scheme article.breadceumbs nav.breadcrumbs {
   height: auto;
   overflow-y: auto;
 }
-section.order_scheme section.scheme article.breadceumbs nav.breadcrumbs::-webkit-scrollbar {
-  display: none;
-}
 section.order_scheme section.scheme article.breadceumbs nav.breadcrumbs ul {
   display: flex;
   flex-direction: row;
