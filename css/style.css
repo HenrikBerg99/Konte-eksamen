@@ -50,14 +50,18 @@ section.desktop_header {
 section.order_scheme {
   width: 100%;
   height: 100%;
+  position: relative;
   border-radius: 8px;
   background-color: #ffffff;
 }
 section.order_scheme header.header_image {
   display: block;
+  position: absolute;
   width: 100%;
-  height: 200px;
-  background: url("../images/sea-4768869_1920.jpg") center/cover no-repeat;
+  height: 50%;
+  background-image: url("../images/sea-4768869_1920.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 section.order_scheme section.scheme {
   width: 100%;
@@ -65,13 +69,13 @@ section.order_scheme section.scheme {
   padding: 1rem;
   border-radius: 8px;
   background-color: #ffffff;
-  margin-top: -25%;
 }
 section.order_scheme section.scheme article.breadceumbs {
   position: relative;
   display: flex;
   width: 100%;
   justify-content: end;
+  margin-bottom: 2rem;
 }
 section.order_scheme section.scheme article.breadceumbs i.indicator {
   position: absolute;
@@ -109,7 +113,7 @@ section.order_scheme section.scheme form.order_form {
   display: grid;
   gap: 1rem;
   grid-template-rows: auto auto;
-  grid-template-areas: "from from" "to to" "duration date" "travlers travlers";
+  grid-template-areas: "from from" "to to" "duration date" "travlers travlers" "search search";
 }
 section.order_scheme section.scheme form.order_form .from {
   grid-area: from;
@@ -126,15 +130,38 @@ section.order_scheme section.scheme form.order_form .date {
 section.order_scheme section.scheme form.order_form .travlers {
   grid-area: travlers;
 }
+section.order_scheme section.scheme form.order_form .search {
+  grid-area: search;
+}
 section.order_scheme section.scheme form.order_form article select, section.order_scheme section.scheme form.order_form article input {
   display: block;
-  height: 40px;
+  height: 50px;
   width: 100%;
-  border: 1px solid #252525;
+  border: 1px solid #9c9c9c;
   outline: none;
+  padding: 0 10px;
+  color: #9c9c9c;
+}
+section.order_scheme section.scheme form.order_form article {
+  position: relative;
 }
 section.order_scheme section.scheme form.order_form article label {
-  display: relative;
+  position: absolute;
+  top: -8px;
+  margin: 0 10px;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #ffffff;
+}
+section.order_scheme section.scheme form.order_form input[type=submit] {
+  height: 50px;
+  background-color: #ffcf40;
+  color: #000000;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  border-radius: 8px;
 }
 
 footer {
