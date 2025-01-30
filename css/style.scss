@@ -7,6 +7,13 @@
 $main_font: Montserrat;
 
 // Colors
+$light_blue: #52d3f0;
+$blue: #1ca2c1;
+$yellow: #ffcf40;
+$text_black: #252525;
+$text_white: #e8e8e8;
+$green: #019101;
+$white: #f6f5f2;
 
 
 // ------------------------------------
@@ -16,18 +23,18 @@ $main_font: Montserrat;
 html, body {
     margin: 0;
     padding: 0;
+    max-width: 1400px;
     font-family: $main_font;
 }
 
 // Wrappers
-#header_wrapper, #footer_wrapper {
-
-}
 
 
 // ------------------------------------
 //  Header / Nav
 // ------------------------------------
+
+
 
 // ------------------------------------
 //  Colors
