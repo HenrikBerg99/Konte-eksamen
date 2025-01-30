@@ -45,13 +45,6 @@ html {
     margin: 0px auto;
 }
 
-#header_wrapper {
-    display: block;
-    max-width: 1000px;
-    width: 90%;
-    margin: 0px auto;
-}
-
 // ------------------------------------
 //  Header / Nav
 // ------------------------------------
@@ -103,7 +96,7 @@ section.order_scheme {
     border-radius: $border_redius;
     background-color: $white;
 
-    img.header_image {
+    header.header_image {
         display: block;
         position: absolute;
         width: 100%;
@@ -111,17 +104,14 @@ section.order_scheme {
         background-image: url('../images/sea-4768869_1920.jpg');
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center center;
     }
 
     section.scheme {
         width: 100%;
         height: 100%;
         padding: 1rem;
-        position: relative;
         border-radius: $border_redius;
         background-color: $white;
-        
 
         article.breadceumbs {
             position: relative;
@@ -220,8 +210,6 @@ section.order_scheme {
 // ------------------------------------
 //  Index - Campaign
 // ------------------------------------
-
-
 
 // ------------------------------------
 //  Index - Offers row

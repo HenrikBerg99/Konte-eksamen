@@ -17,13 +17,6 @@ html {
   margin: 0px auto;
 }
 
-#header_wrapper {
-  display: block;
-  max-width: 1000px;
-  width: 90%;
-  margin: 0px auto;
-}
-
 section.phone_header {
   width: 100%;
   height: 75px;
@@ -61,7 +54,7 @@ section.order_scheme {
   border-radius: 8px;
   background-color: #ffffff;
 }
-section.order_scheme img.header_image {
+section.order_scheme header.header_image {
   display: block;
   position: absolute;
   width: 100%;
@@ -69,13 +62,11 @@ section.order_scheme img.header_image {
   background-image: url("../images/sea-4768869_1920.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
 }
 section.order_scheme section.scheme {
   width: 100%;
   height: 100%;
   padding: 1rem;
-  position: relative;
   border-radius: 8px;
   background-color: #ffffff;
 }
