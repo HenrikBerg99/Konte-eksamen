@@ -47,7 +47,6 @@
     </header>
 
     <main>
-    
         <section class="order_scheme">
             <header class="header_image"></header>
             <div id="main_wrapper">
@@ -64,8 +63,43 @@
                         </nav>
                         <i class="fa-solid fa-chevron-right indicator"></i>
                     </article>
-                    <form>
-                        <label for=""></label>
+                    <form class="order_form">
+                        <article class="from">
+                            <label for="from">Fra</label>
+                            <select name="from" id="from">
+                                <option id="oslo">Oslo Lufthavn</option>
+                                <option id="torp">Torp Sandefjord Lufthavn</option>
+                                <option id="bergen">Bergen Lufthavn</option>
+                                <option id="alta">Alta Lufthavn</option>
+                            </select>
+                        </article>
+                        <article class="to">
+                            <label for="to">Til</label>
+                            <select name="to" id="to">
+                                <option id="albania">Albania</option>
+                                <option id="denmark">Danmark</option>
+                                <option id="finland">Finland</option>
+                                <option id="hellas">Hellas</option>
+                            </select>
+                        </article>
+                        <article class="duration">
+                            <label for="duration">Reiselengde</label>
+                            <select name="duration" id="duration">
+                                <option id="less">Mindre en 1 uke</option>
+                                <option id="one">1 Uke</option>
+                                <option id="two">2 Uker</option>
+                                <option id="more">Mer en 2 uker</option>
+                            </select>
+                        </article>
+                        <article class="date">
+                            <label for="date">Velg dato</label>
+                            <input type="date" id="date">
+                        </article>
+                        <article class="travlers">
+                            <label for="travlers">Antall Reisende</label>
+                            <input type="number" id="travlers">
+                        </article>
+                        <input type="submit" value="Søk">
                     </form>
                 </section>
             </div>

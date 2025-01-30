@@ -107,7 +107,7 @@ section.order_scheme {
         padding: 1rem;
         border-radius: $border_redius;
         background-color: $white;
-        margin-top: -10%;
+        margin-top: -25%;
 
         article.breadceumbs {
             position: relative;
@@ -154,6 +154,32 @@ section.order_scheme {
                 }
             }
         }
+
+        form.order_form {
+            display: grid;
+            gap: 1rem;
+            grid-template-rows: auto auto;
+            grid-template-areas: 
+            "from from"
+            "to to"
+            "duration date"
+            "travlers travlers";
+
+            .from{grid-area: from;} .to{grid-area: to;} .duration{grid-area: duration;}.date {grid-area: date;}.travlers {grid-area: travlers;}
+            
+            article select, article input {
+                display: block;
+                height: 40px;
+                width: 100%;
+                border: 1px solid $bg_black;
+                outline: none;
+            }
+
+            article label {
+                display: relative;
+            }
+        }
+        
     }
 }
 

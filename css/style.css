@@ -65,7 +65,7 @@ section.order_scheme section.scheme {
   padding: 1rem;
   border-radius: 8px;
   background-color: #ffffff;
-  margin-top: -10%;
+  margin-top: -25%;
 }
 section.order_scheme section.scheme article.breadceumbs {
   position: relative;
@@ -104,6 +104,37 @@ section.order_scheme section.scheme article.breadceumbs nav.breadcrumbs ul li a 
   color: #000000;
   font-weight: 500;
   text-decoration: none;
+}
+section.order_scheme section.scheme form.order_form {
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: auto auto;
+  grid-template-areas: "from from" "to to" "duration date" "travlers travlers";
+}
+section.order_scheme section.scheme form.order_form .from {
+  grid-area: from;
+}
+section.order_scheme section.scheme form.order_form .to {
+  grid-area: to;
+}
+section.order_scheme section.scheme form.order_form .duration {
+  grid-area: duration;
+}
+section.order_scheme section.scheme form.order_form .date {
+  grid-area: date;
+}
+section.order_scheme section.scheme form.order_form .travlers {
+  grid-area: travlers;
+}
+section.order_scheme section.scheme form.order_form article select, section.order_scheme section.scheme form.order_form article input {
+  display: block;
+  height: 40px;
+  width: 100%;
+  border: 1px solid #252525;
+  outline: none;
+}
+section.order_scheme section.scheme form.order_form article label {
+  display: relative;
 }
 
 footer {
