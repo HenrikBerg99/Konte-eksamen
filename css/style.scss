@@ -396,8 +396,32 @@ section.inspiration {
 }
 
 // ------------------------------------
-//  Hotell - 
+//  Order - breadcrumbs 
 // ------------------------------------
+
+nav.breadcrumbs {
+overflow-y: auto;
+width: 100%;
+background-color: $blue;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+
+        li {
+            flex: 0 0 auto;
+
+            a {
+                text-decoration: none;
+
+                i {
+                    
+                }
+            }
+        }
+    }
+}
 
 // ------------------------------------
 //  Footer

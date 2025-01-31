@@ -314,6 +314,22 @@ section.inspiration section.container article.card a {
   left: 0;
 }
 
+nav.breadcrumbs {
+  overflow-y: auto;
+  width: 100%;
+  background-color: #1ca2c1;
+}
+nav.breadcrumbs ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+nav.breadcrumbs ul li {
+  flex: 0 0 auto;
+}
+nav.breadcrumbs ul li a {
+  text-decoration: none;
+}
 footer {
   width: 100%;
   height: auto;
