@@ -317,19 +317,52 @@ section.inspiration section.container article.card a {
 nav.breadcrumbs {
   overflow-y: auto;
   width: 100%;
+  height: auto;
   background-color: #1ca2c1;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 nav.breadcrumbs ul {
   display: flex;
   flex-direction: row;
   list-style: none;
+  align-items: center;
+  padding: 10px 0;
 }
 nav.breadcrumbs ul li {
   flex: 0 0 auto;
+  color: #ffffff;
 }
 nav.breadcrumbs ul li a {
   text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 0 1rem;
+  transition: 0.1s all ease;
 }
+nav.breadcrumbs ul li a:hover {
+  opacity: 0.7;
+  transition: 0.1s all ease;
+}
+nav.breadcrumbs ul i {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+section.order_option h2 {
+  margin-bottom: 1rem;
+}
+section.order_option article.my_choise {
+  margin: 1rem 0;
+}
+section.order_option article.my_choise details {
+  padding: 1rem;
+  box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.05);
+}
+section.order_option article.my_choise.desktop {
+  display: none;
+}
+
 footer {
   width: 100%;
   height: auto;

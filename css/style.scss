@@ -402,26 +402,67 @@ section.inspiration {
 nav.breadcrumbs {
 overflow-y: auto;
 width: 100%;
+height: auto;
 background-color: $blue;
+border-bottom-right-radius: $border_redius;
+border-bottom-left-radius: $border_redius;
 
     ul {
         display: flex;
         flex-direction: row;
         list-style: none;
+        align-items: center;
+        padding: 10px 0;
 
         li {
             flex: 0 0 auto;
+            color: $white;
 
             a {
                 text-decoration: none;
+                color: $white;
+                font-weight: 500;
+                padding: 0 1rem;
+                transition: .1s all ease;
 
-                i {
-                    
+                &:hover {
+                    opacity: .7;
+                    transition: .1s all ease;
                 }
             }
         }
+
+        i {
+            font-size: 30px;
+            color: $white;
+        }
     }
 }
+
+// ------------------------------------
+//  Order - details/order option
+// ------------------------------------
+
+section.order_option {
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    article.my_choise {
+        margin: 1rem 0;
+
+        details {
+            padding: 1rem;
+            box-shadow: $box_shadow;
+        }
+
+        &.desktop {
+            display: none;
+        }
+    }
+}
+
 
 // ------------------------------------
 //  Footer
