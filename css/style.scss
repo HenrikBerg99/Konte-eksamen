@@ -282,7 +282,7 @@ section.campaign {
 section.offers_row {
     width: 100%;
     height: auto;
-    padding: 3rem 0;
+    padding: 4rem 0;
     overflow-y: auto;
     display: flex;
     flex-direction: row;
@@ -290,14 +290,15 @@ section.offers_row {
     gap: 2rem;
 
     article.container {
-        padding: 1rem;
+        padding: 3rem;
         margin-left: 2px;
         flex: 0 0 auto;
         border-radius: $border_redius;
         box-shadow: $box_shadow;
 
         h3 {
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
+            font-weight: 800;
         }
 
         a {
@@ -353,6 +354,7 @@ section.inspiration {
 
                 p.offer {
                     position: absolute;
+                    margin-top: 0;
                     left: 0;
                     top: 0;
                     padding: 1rem;
