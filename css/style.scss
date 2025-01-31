@@ -492,6 +492,7 @@ section.gallery {
 nav.options {
     width: 100%;
     max-width: 1000px;
+    margin: 0px auto;
     border-bottom: 2px solid $smoke_white;
     margin-bottom: 4rem;
     
@@ -529,9 +530,6 @@ nav.options {
 // ------------------------------------
 
 section.information {
-    width: 90%;
-    max-width: 1000px;
-    align-items: center;
 
     h2.title {
         font-weight: 800;
@@ -539,50 +537,135 @@ section.information {
     }
 
     article.rating_info {
+        margin: 2rem 0;
 
         ul {
-            
+            display: flex;
+            list-style: none;
+            gap: 10px;
+            font-size: 20px;
+            color: $yellow;
         }
 
         h4 {
-            
+            margin: 1rem 0;
+            font-size: 18px;
+
+            .rating {
+                background-color: green;
+                padding: 5px;
+                border-radius: $border_redius;
+                color: $white;
+                font-size: 12px;
+                margin-right: 5px;
+            }
         }
 
         a {
-            
+            font-size: 12px;
+            text-decoration: none;
+            color: $blue;
+            font-weight: 500;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 
     article.facilities {
          
         h3 {
-
+            margin: 1rem 0;
         }
 
         p {
-
+            margin: 2rem 0;
         }
 
         ul {
-            
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            list-style: none;
+            gap: 1rem;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+
             li {
-                
+                flex: 1 1 calc(50% - 1rem);
             }
         }
 
         a {
+            font-size: 12px;
+            text-decoration: none;
+            color: $blue;
+            font-weight: 500;
 
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 
     article.explore {
 
         h3 {
-
+            margin-top: 2rem;
         }
 
         .map {
+            width: 100%;
+            height: 250px;
+
+            iframe {
+                border: none;
+                width: 100%;
+                height: 100%;
+                border-radius: $border_redius;
+            }
+        }
+    }
+
+    article.rooms {
+
+
+        h3 {
+            margin: 1rem 0;            
+        }
+
+        header {
             
+            h2 {
+
+            }
+        }
+
+        article.card {
+
+            figure {
+
+                img {
+
+                }
+            }
+
+            p.capacity {
+
+            }
+
+            p.rate {
+
+
+                .rating {
+
+                }
+            }
+
+            p.info {
+                
+            }
         }
     }
 }
