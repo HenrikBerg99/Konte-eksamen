@@ -87,9 +87,99 @@
                     </details>
                 </article>
                 <form>
-                    <fieldset>
-                        <h4></h4>
+                    <fieldset class="schema">
+                        <h4>VOKSEN 18+ HOVEDBESTILLER</h4>
+                        <fieldset class="firstname">
+                            <label for="firstname">FORNAVN (IFØLGE PASS)</label>
+                            <input type="text" id="firstname">
+                        </fieldset>
+                        <fieldset class="lastname">
+                            <label for="lastname">ETTERNAVN (IFØLGE PASS)</label>
+                            <input type="text" id="lastname">
+                        </fieldset>
+                        <fieldset class="birthday">
+                            <label for="date">FØDSELSDAG</label>
+                            <ul>
+                                <li><input type="number" id="date" placeholder="DD"></li>
+                                <li><input type="number" id="month" placeholder="MM"></li>
+                                <li><input type="number" id="year" placeholder="ÅÅÅÅ"></li>
+                            </ul>
+                        </fieldset>
+                        <fieldset class="gender">
+                            <ul>
+                                <li>
+                                    <input type="radio" id="female" name="gender" value="Mann">
+                                    <label for="female"></label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="male" name="gender" value="Mann">
+                                    <label for="male"></label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset class="mail">
+                            <label for="email">E-POSTADRESSE</label>
+                            <input type="email" id="email"> 
+                        </fieldset>
+                        <fieldset class="phone">
+                            <label for="phone">TELEFONNUMMER</label>
+                            <input type="phone" id="phone"> 
+                        </fieldset>
+                        <fieldset class="email">
+                            <label for="email">GATEADRESSE</label>
+                            <input type="email" id="email"> 
+                        </fieldset>
+                        <fieldset class="zipcode">
+                            <label for="zipcode">POSTNUMMER</label>
+                            <input type="zipcode" id="zipcode"> 
+                        </fieldset>
+                        <fieldset class="postal_code">
+                            <label for="postal_code">POSTSTED</label>
+                            <input type="postal_code" id="postal_code"> 
+                        </fieldset>
+                        <fieldset class="country">
+                            <label for="country">LAND</label>
+                            <select name="country" id="country">
+                                <option disabled>Velg et land</option>
+                                <option value="norge">Norge</option>
+                                <option value="sverige">Sverige</option>
+                                <option value="denmark">Danmark</option>
+                                <option value="tyskland">Tyskland</option>
+                            </select>
+                        </fieldset>
                     </fieldset>
+                    <fieldset class="schema">
+                        <h4>VOKSEN 18+ HOVEDBESTILLER</h4>
+                        <fieldset class="firstname">
+                            <label for="firstname">FORNAVN (IFØLGE PASS)</label>
+                            <input type="text" id="firstname">
+                        </fieldset>
+                        <fieldset class="lastname">
+                            <label for="lastname">ETTERNAVN (IFØLGE PASS)</label>
+                            <input type="text" id="lastname">
+                        </fieldset>
+                        <fieldset class="birthday">
+                            <label for="date">FØDSELSDAG</label>
+                            <ul>
+                                <li><input type="number" id="date" placeholder="DD"></li>
+                                <li><input type="number" id="month" placeholder="MM"></li>
+                                <li><input type="number" id="year" placeholder="ÅÅÅÅ"></li>
+                            </ul>
+                        </fieldset>
+                        <fieldset class="gender">
+                            <ul>
+                                <li>
+                                    <input type="radio" id="female" name="gender" value="Mann">
+                                    <label for="female"></label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="male" name="gender" value="Mann">
+                                    <label for="male"></label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </fieldset>
+                    <button type="submit">Siste trinn <i class="fa-solid fa-arrow-right"></i></button>
                 </form>
             </section>
         </div>
