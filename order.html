@@ -49,11 +49,16 @@
     <main>
         <nav class="breadcrumbs">
             <ul>
-                <li><a href="index.html">Søk <i class="fa-solid fa-angle-right"></i></a></li>
-                <li><a href="hotell.html">Søkeresultater <i class="fa-solid fa-angle-right"></i></a></li>
-                <li><a href="https://www.norweigan.no/" target="_blank">Fly <i class="fa-solid fa-angle-right"></i></a></li>
-                <li><a href="#">Tillegg <i class="fa-solid fa-angle-right"></i></a></li>
-                <li><a href="order.html">Opplysninger <i class="fa-solid fa-angle-right"></i></a></li>
+                <li><a href="index.html">Søk</a></li>
+                <li><i class="fa-solid fa-angle-right"></i></li>
+                <li><a href="hotell.html">Søkeresultater</a></li>
+                <li><i class="fa-solid fa-angle-right"></i></li>
+                <li><a href="https://www.norweigan.no/" target="_blank">Fly</a></li>
+                <i class="fa-solid fa-angle-right"></i>
+                <li><a href="#">Tillegg</a></li>
+                <li><i class="fa-solid fa-angle-right"></i></li>
+                <li><a href="order.html">Opplysninger</a></li>
+                <li><i class="fa-solid fa-angle-right"></i></li>
                 <li><a href="#">Bestill</a></li>
             </ul>
         </nav>
@@ -136,7 +141,7 @@
                         </fieldset>
                         <fieldset class="postal_code">
                             <label for="postal_code">POSTSTED</label>
-                            <input type="postal_code" id="postal_code"> 
+                            <input type="text" id="postal_code"> 
                         </fieldset>
                         <fieldset class="country">
                             <label for="country">LAND</label>
@@ -152,30 +157,30 @@
                     <fieldset class="schema">
                         <h3>VOKSEN 18+</h3>
                         <fieldset class="firstname">
-                            <label for="firstname">FORNAVN (IFØLGE PASS)</label>
-                            <input type="text" id="firstname">
+                            <label for="firstname2">FORNAVN (IFØLGE PASS)</label>
+                            <input type="text" id="firstname2">
                         </fieldset>
                         <fieldset class="lastname">
-                            <label for="lastname">ETTERNAVN (IFØLGE PASS)</label>
-                            <input type="text" id="lastname">
+                            <label for="lastname2">ETTERNAVN (IFØLGE PASS)</label>
+                            <input type="text" id="lastname2">
                         </fieldset>
                         <fieldset class="birthday">
-                            <label for="date">FØDSELSDAG</label>
+                            <label for="date2">FØDSELSDAG</label>
                             <ul>
-                                <li><input type="number" id="date" placeholder="DD"></li>
-                                <li><input type="number" id="month" placeholder="MM"></li>
-                                <li><input type="number" id="year" placeholder="ÅÅÅÅ"></li>
+                                <li><input type="number" id="date2" placeholder="DD"></li>
+                                <li><input type="number" id="month2" placeholder="MM"></li>
+                                <li><input type="number" id="year2" placeholder="ÅÅÅÅ"></li>
                             </ul>
                         </fieldset>
                         <fieldset class="gender">
                             <ul>
                                 <li>
-                                    <input type="radio" id="female" name="gender" value="Mann">
-                                    <label for="female">KVINNE</label>
+                                    <input type="radio" id="female2" name="gender" value="Mann">
+                                    <label for="female2">KVINNE</label>
                                 </li>
                                 <li>
-                                    <input type="radio" id="male" name="gender" value="Mann">
-                                    <label for="male">MANN</label>
+                                    <input type="radio" id="male2" name="gender" value="Mann">
+                                    <label for="male2">MANN</label>
                                 </li>
                             </ul>
                         </fieldset>
@@ -249,9 +254,9 @@
             <article class="news">
                 <h3>Nyheter og tilbud</h3>
                 <form>
-                    <label for="email">Meld deg på nyhetsbrev her</label>
+                    <label for="news_email">Meld deg på nyhetsbrev her</label>
                     <article class="input_field">
-                        <input type="email" name="email" id="email" placeholder="ola@example.no...">
+                        <input type="email" name="news_email" id="news_email" placeholder="ola@example.no...">
                         <input type="submit" value="Send">
                     </article>
                 </form>

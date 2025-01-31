@@ -332,6 +332,9 @@ nav.breadcrumbs ul {
 nav.breadcrumbs ul li {
   flex: 0 0 auto;
   color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 nav.breadcrumbs ul li a {
   text-decoration: none;

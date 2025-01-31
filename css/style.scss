@@ -417,6 +417,9 @@ border-bottom-left-radius: $border_redius;
         li {
             flex: 0 0 auto;
             color: $white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
             a {
                 text-decoration: none;
