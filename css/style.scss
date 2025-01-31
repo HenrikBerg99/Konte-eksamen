@@ -112,6 +112,7 @@ section.order_scheme {
         padding: 1rem;
         border-radius: $border_redius;
         background-color: $white;
+        box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
 
         article.breadceumbs {
             position: relative;
@@ -211,8 +212,85 @@ section.order_scheme {
 //  Index - Campaign
 // ------------------------------------
 
+section.campaign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 2rem 0;
+    background-image: url("../images/holiday-2733322_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    article.content {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: end;
+
+        a {
+            margin-top: 1rem;
+            text-decoration: none;
+            font-weight: 800;
+            color: $black;
+            border-radius: $border_redius;
+            padding: 1rem;
+            background-color: $yellow;
+            text-align: right;
+            transition: .1s all ease;
+
+            &:hover {
+                transition: .1s all ease;
+                opacity: .7;
+            }
+        }
+
+        article.box {
+            padding: 3rem;
+            background-color: $light_blue;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+
+            h3 {
+                font-size: 20px;
+                font-weight: 800;
+            }
+
+            p {
+                margin-top: 1rem;
+                font-weight: 500;
+            }
+
+            h1 {
+                font-size: 28px;
+                font-weight: 800;
+            }
+        }
+    }
+}
+
 // ------------------------------------
 //  Index - Offers row
+// ------------------------------------
+
+section.offers_row {
+
+    article.container {
+
+        h3 {
+
+        }
+
+        a {
+            
+        }
+    }
+}
+
+// ------------------------------------
+//  Index - Inspiration & Tips
 // ------------------------------------
 
 // ------------------------------------

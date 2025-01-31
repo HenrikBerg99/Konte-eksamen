@@ -69,6 +69,7 @@ section.order_scheme section.scheme {
   padding: 1rem;
   border-radius: 8px;
   background-color: #ffffff;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 section.order_scheme section.scheme article.breadceumbs {
   position: relative;
@@ -159,6 +160,58 @@ section.order_scheme section.scheme form.order_form input[type=submit] {
   border: none;
   outline: none;
   border-radius: 8px;
+}
+
+section.campaign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding: 2rem 0;
+  background-image: url("../images/holiday-2733322_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+section.campaign article.content {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+}
+section.campaign article.content a {
+  margin-top: 1rem;
+  text-decoration: none;
+  font-weight: 800;
+  color: #000000;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #ffcf40;
+  text-align: right;
+  transition: 0.1s all ease;
+}
+section.campaign article.content a:hover {
+  transition: 0.1s all ease;
+  opacity: 0.7;
+}
+section.campaign article.content article.box {
+  padding: 3rem;
+  background-color: #52d3f0;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+section.campaign article.content article.box h3 {
+  font-size: 20px;
+  font-weight: 800;
+}
+section.campaign article.content article.box p {
+  margin-top: 1rem;
+  font-weight: 500;
+}
+section.campaign article.content article.box h1 {
+  font-size: 28px;
+  font-weight: 800;
 }
 
 footer {
