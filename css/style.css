@@ -350,7 +350,7 @@ nav.breadcrumbs ul i {
 }
 
 section.order_option h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 section.order_option article.my_choise {
   margin: 1rem 0;
@@ -359,8 +359,140 @@ section.order_option article.my_choise details {
   padding: 1rem;
   box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.05);
 }
+section.order_option article.my_choise details summary {
+  list-style: none;
+}
+section.order_option article.my_choise details article.card {
+  width: 100%;
+  margin-top: 1rem;
+  height: auto;
+}
+section.order_option article.my_choise details article.card img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.order_option article.my_choise details article.card h4 {
+  text-align: center;
+}
+section.order_option article.my_choise details article.card ul.rating {
+  display: flex;
+  list-style: none;
+  margin: 1rem 0;
+  gap: 10px;
+}
+section.order_option article.my_choise details article.card ul.rating li {
+  color: #ffcf40;
+  font-size: 18px;
+}
+section.order_option article.my_choise details article.card ul.facilitis {
+  list-style: none;
+}
+section.order_option article.my_choise details article.card ul.facilitis li {
+  line-height: 30px;
+}
+section.order_option article.my_choise details article.card ul.facilitis li i {
+  margin-right: 10px;
+}
 section.order_option article.my_choise.desktop {
   display: none;
+}
+section.order_option form {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 2rem;
+}
+section.order_option form button[type=submit] {
+  padding: 1.3rem;
+  font-weight: 800;
+  font-size: 18px;
+  background-color: #ffcf40;
+  color: #000000;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  transition: 0.1s all ease;
+  cursor: pointer;
+}
+section.order_option form button[type=submit]:hover {
+  opacity: 0.7;
+  transition: 0.1s all ease;
+}
+section.order_option form fieldset {
+  border: none;
+  outline: none;
+}
+section.order_option form .firstname {
+  grid-area: firstname;
+}
+section.order_option form .lastname {
+  grid-area: lastname;
+}
+section.order_option form .birthday {
+  grid-area: birthday;
+}
+section.order_option form .gender {
+  grid-area: gender;
+}
+section.order_option form .email {
+  grid-area: email;
+}
+section.order_option form .phone {
+  grid-area: phone;
+}
+section.order_option form .adress {
+  grid-area: adress;
+}
+section.order_option form .zipcode {
+  grid-area: zipcode;
+}
+section.order_option form .postal_code {
+  grid-area: postal_code;
+}
+section.order_option form .country {
+  grid-area: country;
+}
+section.order_option form fieldset.schema {
+  padding: 1rem;
+  position: relative;
+  width: 100;
+  background-color: #f6f5f1;
+  margin-bottom: 2em;
+  border-radius: 8px;
+  grid-template-rows: 100%;
+  grid-template-columns: auto;
+}
+section.order_option form fieldset.schema h3 {
+  position: absolute;
+  top: -13px;
+}
+section.order_option form fieldset.schema input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin: 1rem 0;
+  outline: none;
+  border: none;
+  padding: 0 5px;
+}
+section.order_option form fieldset.schema label {
+  font-weight: 600;
+}
+section.order_option form fieldset.schema fieldset.birthday ul, section.order_option form fieldset.schema fieldset.gender ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+section.order_option form fieldset.schema fieldset.birthday ul li, section.order_option form fieldset.schema fieldset.gender ul li {
+  display: flex;
+  align-items: center;
+}
+section.order_option form fieldset.schema fieldset.birthday ul li label, section.order_option form fieldset.schema fieldset.gender ul li label {
+  margin-left: 10px;
 }
 
 footer {
