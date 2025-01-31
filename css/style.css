@@ -9,7 +9,7 @@ html {
   font-family: Montserrat;
 }
 
-#main_wrapper, #scheme_wrapper {
+.wrapper {
   display: block;
   max-width: 1000px;
   width: 90%;

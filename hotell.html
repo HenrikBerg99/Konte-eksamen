@@ -17,7 +17,7 @@
             <a href="index.html"><img class="logo" src="images/fav.png" alt="Logo"></a>
             <nav class="phone_nav">
                 <ul>
-                    <li><a href="#tips"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="index.html#tips"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                     <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
                     <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
                 </ul>
@@ -48,7 +48,7 @@
 
     <main>
         <section class="gallery">
-            <button class="like_btn"></button>
+            <button class="like_btn"><i class="fa-regular fa-heart"></i></button>
             <button class="arrow left"><i class="fa-solid fa-left-right"></i></button>
             <article class="images">
                 <img src="images/landscape-2016308_640.jpg" alt="Bilde av hotellet">
@@ -59,8 +59,67 @@
                 <img src="images/beach-666122_640.jpg" alt="Bilde av hotellet">
             </article>
             <button class="arrow right"><i class="fa-solid fa-angle-right"></i></button>
-            <button class="more_imgs"></button>
+            <button class="more_imgs"><i class="fa-regular fa-images"></i> 49</button>
         </section>
+
+        <nav class="options">
+            <ul>
+                <li class="active"><a href="#">Oversikt</a></li>
+                <li><a href="#">Fasiliteter</a></li>
+                <li><a href="#">Oversikt</a></li>
+            </ul>
+        </nav>
+
+        <section class="information">
+            <div class="wrapper">
+                <h3 class="title">Parga Beach</h3>
+                <article class="rating_info">
+                    <ul>
+                        <li><i class="fa-solid fa-sun"></i></li>
+                        <li><i class="fa-solid fa-sun"></i></li>
+                        <li><i class="fa-solid fa-sun"></i></li>
+                        <li><i class="fa-solid fa-sun"></i></li>
+                        <li><i class="fa-regular fa-sun"></i></li>
+                    </ul>
+                    <h4><span class="rating">8.9</span>Fantastisk</h4>
+                    <a href="#">Se alle anmeldelser <i class="fa-solid fa-angle-right"></i></a>
+                </article>
+                <article class="facilities">
+                    <h3>Fasiliteter</h3>
+                    <p>Parga Beach tilbyr et tilsynelatende uuttømmelig av sport og aktiviteter og lokker til seg så vel elitesiereutøvere som aktive familier og hverdagsmosjonister -i alle aldere og på alle nivåer.</p>
+
+                    <ul>
+                        <li><i class="fa-solid fa-paw"></i> Kjæledyr-vennlig</li>
+                        <li><i class="fa-solid fa-bell-concierge"></i> Romservice</li>
+                        <li><i class="fa-solid fa-mug-hot"></i> Frokost</li>
+                        <li><i class="fa-solid fa-mug-hot"></i> Bar</li>
+                        <li><i class="fa-solid fa-spa"></i> Spa</li>
+                        <li><i class="fa-solid fa-dumbbell"></i> Trensingssenter</li>
+                    </ul>
+                    <a href="#">Se alle eiendomsfasiliteter <i class="fa-solid fa-angle-right"></i></a>
+                </article>
+                <article class="explore">
+                    <h3>Utforsk området</h3>
+                    <div class="map" id="map" style="width: 100%; height: 200px;">
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAr8ff7eNbqYIAFJ31MZT_VdCs2r7QetjA&callback=initMap&libraries=&v=weekly">
+                        function initMap() {
+                            const hotell_marker = {
+                                lat: 39.28570678457609,
+                                lng: 20.38865072687794
+                            };
+                            const map = new google.maps.Map(
+                                document.getElementById("map"), {
+                                zoom: 17.56,
+                                center: hotell_marker,
+                            });
+                        }
+                    </script>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
     </main>
 
     <footer>
