@@ -116,7 +116,7 @@ section.order_scheme {
         background-color: $white;
         box-shadow: $box_shadow;
 
-        article.breadceumbs {
+        article.breadceumbs_index {
             position: relative;
             display: flex;
             width: 100%;
@@ -131,7 +131,7 @@ section.order_scheme {
                 font-size: 20px;
             }
     
-            nav.breadcrumbs {
+            nav.breadcrumbs_index {
                 width: 100%;
                 height: auto;
                 overflow-y: auto;
@@ -490,9 +490,102 @@ section.gallery {
 // ------------------------------------
 
 nav.options {
+    width: 100%;
+    max-width: 1000px;
+    border-bottom: 2px solid $smoke_white;
+    margin-bottom: 4rem;
     
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+
+        li {
+            padding: 1rem 1rem;
+
+            a {
+                text-decoration: none;
+                color: $black;
+
+                &:hover {
+                    opacity: .7;
+                }
+            }
+
+            &.active {
+                border-bottom: 3px solid $blue;
+
+                a {
+                    color: $blue;
+                    font-weight: 800;
+                }
+            }
+        }
+    }
 }
 
+// ------------------------------------
+//  Hotell - Informasjon 
+// ------------------------------------
+
+section.information {
+    width: 90%;
+    max-width: 1000px;
+    align-items: center;
+
+    h2.title {
+        font-weight: 800;
+        font-size: 26px;
+    }
+
+    article.rating_info {
+
+        ul {
+            
+        }
+
+        h4 {
+            
+        }
+
+        a {
+            
+        }
+    }
+
+    article.facilities {
+         
+        h3 {
+
+        }
+
+        p {
+
+        }
+
+        ul {
+            
+            li {
+                
+            }
+        }
+
+        a {
+
+        }
+    }
+
+    article.explore {
+
+        h3 {
+
+        }
+
+        .map {
+            
+        }
+    }
+}
 
 // ------------------------------------
 //  Order - breadcrumbs 

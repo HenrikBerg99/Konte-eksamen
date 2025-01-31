@@ -70,38 +70,38 @@ section.order_scheme section.scheme {
   background-color: #ffffff;
   box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.05);
 }
-section.order_scheme section.scheme article.breadceumbs {
+section.order_scheme section.scheme article.breadceumbs_index {
   position: relative;
   display: flex;
   width: 100%;
   justify-content: end;
   margin-bottom: 2rem;
 }
-section.order_scheme section.scheme article.breadceumbs i.indicator {
+section.order_scheme section.scheme article.breadceumbs_index i.indicator {
   position: absolute;
   padding-left: 20px;
   padding-right: 10px;
   background: rgba(255, 255, 255, 0.9);
   font-size: 20px;
 }
-section.order_scheme section.scheme article.breadceumbs nav.breadcrumbs {
+section.order_scheme section.scheme article.breadceumbs_index nav.breadcrumbs_index {
   width: 100%;
   height: auto;
   overflow-y: auto;
 }
-section.order_scheme section.scheme article.breadceumbs nav.breadcrumbs ul {
+section.order_scheme section.scheme article.breadceumbs_index nav.breadcrumbs_index ul {
   display: flex;
   flex-direction: row;
   gap: 1.5rem;
   list-style: none;
 }
-section.order_scheme section.scheme article.breadceumbs nav.breadcrumbs ul li {
+section.order_scheme section.scheme article.breadceumbs_index nav.breadcrumbs_index ul li {
   flex: 0 0 auto;
 }
-section.order_scheme section.scheme article.breadceumbs nav.breadcrumbs ul li.active {
+section.order_scheme section.scheme article.breadceumbs_index nav.breadcrumbs_index ul li.active {
   border-bottom: 3px solid #1ca2c1;
 }
-section.order_scheme section.scheme article.breadceumbs nav.breadcrumbs ul li a {
+section.order_scheme section.scheme article.breadceumbs_index nav.breadcrumbs_index ul li a {
   color: #000000;
   font-weight: 500;
   text-decoration: none;
@@ -392,6 +392,44 @@ section.gallery article.images img {
   height: 100%;
 }
 
+nav.options {
+  width: 100%;
+  max-width: 1000px;
+  border-bottom: 2px solid #e8e8e8;
+  margin-bottom: 4rem;
+}
+nav.options ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+nav.options ul li {
+  padding: 1rem 1rem;
+}
+nav.options ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+nav.options ul li a:hover {
+  opacity: 0.7;
+}
+nav.options ul li.active {
+  border-bottom: 3px solid #1ca2c1;
+}
+nav.options ul li.active a {
+  color: #1ca2c1;
+  font-weight: 800;
+}
+
+section.information {
+  width: 90%;
+  max-width: 1000px;
+  align-items: center;
+}
+section.information h2.title {
+  font-weight: 800;
+  font-size: 26px;
+}
 nav.breadcrumbs {
   overflow-y: auto;
   width: 100%;
